@@ -1,0 +1,25 @@
+## Ignorar carpetas de compilación
+[Bb]in/
+[Oo]bj/
+
+## Visual Studio (Configuraciones de usuario y cache)
+.vs
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Archivos de Test
+TestResults/
+
+## Archivos temporales de Windows/Mac
+Thumbs.db
+.DS_Store
+
+## Entity Framework
+*.mdf
+*.ldf
+
+## Logs
+*.log
