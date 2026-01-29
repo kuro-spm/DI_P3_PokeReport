@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,10 +67,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
@@ -105,8 +101,7 @@
               "RelativeToolTip": "PokeReport_Sara\\PokeReport.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-29T11:02:59.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T11:02:59.77Z"
             },
             {
               "$type": "Document",
@@ -117,8 +112,7 @@
               "ToolTip": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\PokeReport.csproj",
               "RelativeToolTip": "PokeReport_Sara\\PokeReport.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-29T10:58:41.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T10:58:41.651Z"
             },
             {
               "$type": "Document",
@@ -154,8 +148,7 @@
               "ToolTip": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\MainWindow.xaml",
               "RelativeToolTip": "PokeReport_Sara\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-27T14:10:38.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T14:10:38.962Z"
             },
             {
               "$type": "Document",
@@ -167,8 +160,11 @@
               "RelativeToolTip": "PokeReport_Sara\\QuestPdf\\InvoiceDocument.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAAwFkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T14:10:37.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T14:10:37.057Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }
