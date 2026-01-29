@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PokeData/PokeData.csproj" />
+  <Project Path="PokeReport_Sara/PokeReport.csproj" />
+</Solution>

@@ -1,0 +1,178 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|c:\\users\\sprat\\documents\\aa_icb0\\dam2\\disseny_interficies\\di_p3_pokereport_sara\\pokereport_sara\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|solutionrelative:pokereport_sara\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|c:\\users\\sprat\\documents\\aa_icb0\\dam2\\disseny_interficies\\di_p3_pokereport_sara\\pokereport_sara\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|solutionrelative:pokereport_sara\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|c:\\users\\sprat\\documents\\aa_icb0\\dam2\\disseny_interficies\\di_p3_pokereport_sara\\pokereport_sara\\questpdf\\invoicedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|solutionrelative:pokereport_sara\\questpdf\\invoicedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|c:\\users\\sprat\\documents\\aa_icb0\\dam2\\disseny_interficies\\di_p3_pokereport_sara\\pokereport_sara\\pokereport.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|solutionrelative:pokereport_sara\\pokereport.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|c:\\users\\sprat\\documents\\aa_icb0\\dam2\\disseny_interficies\\di_p3_pokereport_sara\\pokereport_sara\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|solutionrelative:pokereport_sara\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|c:\\users\\sprat\\documents\\aa_icb0\\dam2\\disseny_interficies\\di_p3_pokereport_sara\\pokereport_sara\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|solutionrelative:pokereport_sara\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|c:\\users\\sprat\\documents\\aa_icb0\\dam2\\disseny_interficies\\di_p3_pokereport_sara\\pokereport_sara\\pokereport.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|solutionrelative:pokereport_sara\\pokereport.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|c:\\users\\sprat\\documents\\aa_icb0\\dam2\\disseny_interficies\\di_p3_pokereport_sara\\pokereport_sara\\questpdf\\invoicedocumentdatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAB67F2B-2E33-6B7B-8F7E-5CB782EAF537}|PokeReport_Sara\\PokeReport.csproj|solutionrelative:pokereport_sara\\questpdf\\invoicedocumentdatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\App.xaml.cs",
+              "RelativeDocumentMoniker": "PokeReport_Sara\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\App.xaml.cs",
+              "RelativeToolTip": "PokeReport_Sara\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T11:23:18.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\App.xaml",
+              "RelativeDocumentMoniker": "PokeReport_Sara\\App.xaml",
+              "ToolTip": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\App.xaml",
+              "RelativeToolTip": "PokeReport_Sara\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-29T11:23:14.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PokeReport.csproj",
+              "DocumentMoniker": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\PokeReport.csproj",
+              "RelativeDocumentMoniker": "PokeReport_Sara\\PokeReport.csproj",
+              "ToolTip": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\PokeReport.csproj*",
+              "RelativeToolTip": "PokeReport_Sara\\PokeReport.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-29T11:02:59.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PokeReport",
+              "DocumentMoniker": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\PokeReport.csproj",
+              "RelativeDocumentMoniker": "PokeReport_Sara\\PokeReport.csproj",
+              "ToolTip": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\PokeReport.csproj",
+              "RelativeToolTip": "PokeReport_Sara\\PokeReport.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-29T10:58:41.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InvoiceDocumentDataSource.cs",
+              "DocumentMoniker": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\QuestPdf\\InvoiceDocumentDataSource.cs",
+              "RelativeDocumentMoniker": "PokeReport_Sara\\QuestPdf\\InvoiceDocumentDataSource.cs",
+              "ToolTip": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\QuestPdf\\InvoiceDocumentDataSource.cs",
+              "RelativeToolTip": "PokeReport_Sara\\QuestPdf\\InvoiceDocumentDataSource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T14:12:05.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PokeReport_Sara\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PokeReport_Sara\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T14:10:43.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PokeReport_Sara\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\MainWindow.xaml",
+              "RelativeToolTip": "PokeReport_Sara\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-27T14:10:38.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InvoiceDocument.cs",
+              "DocumentMoniker": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\QuestPdf\\InvoiceDocument.cs",
+              "RelativeDocumentMoniker": "PokeReport_Sara\\QuestPdf\\InvoiceDocument.cs",
+              "ToolTip": "C:\\Users\\sprat\\Documents\\Aa_ICB0\\dam2\\disseny_interficies\\DI_P3_PokeReport_Sara\\PokeReport_Sara\\QuestPdf\\InvoiceDocument.cs",
+              "RelativeToolTip": "PokeReport_Sara\\QuestPdf\\InvoiceDocument.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAwFkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T14:10:37.057Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
