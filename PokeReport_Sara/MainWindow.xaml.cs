@@ -31,6 +31,7 @@ namespace PokeReport_Sara
         {
             try
             {
+                
                 // 1. Assegurem que tenim la imatge necessària abans de generar el PDF
                 string urlBulbasaur = "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png";
                 await GestionarImatgeLocalAsync(urlBulbasaur);

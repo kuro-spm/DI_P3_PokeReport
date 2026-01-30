@@ -1,4 +1,5 @@
-﻿using PokeReport.QuestPdf;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using PokeReport.QuestPdf;
 using QuestPDF.Drawing;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
@@ -9,6 +10,7 @@ using System.IO;
 public class InvoiceDocument : IDocument
 {
     string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+    public static int NUMPOKEMON = 1;
 
     public InvoiceModel Model { get; }
 
@@ -91,16 +93,22 @@ public class InvoiceDocument : IDocument
     {
         container
             .PaddingVertical(40)
-            .Height(500)
             .AlignCenter()
             .AlignMiddle()
-            .Text("Content").FontSize(16);
+            .Column(col =>
+            {
+                col.Spacing(10);
+                for (int i = 0; i < NUMPOKEMON; i++)
+                {
+                    col.Item().Element(subContainer => ComposePokerow(subContainer, i+1));
+                }
+            });
     }
 
     void ComposePokerow(IContainer container, int i)
     {
-        string imagePath = "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/" + i.ToString("D3") + ".png";
-        // "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png"
+        string imagePath = Path.Combine(baseDir, "Images", i.ToString("D3")+".png");
+
         container.Row(row =>
         {
             row.RelativeItem().Image(imagePath);
@@ -109,6 +117,10 @@ public class InvoiceDocument : IDocument
             });
             row.RelativeItem().Padding(5).Background("#E0E0E0").Column(col => {
                 col.Item().AlignCenter().Text("STATS");
+                col.Item().Row(stats =>
+                {
+
+                });
             });
         });
     }
