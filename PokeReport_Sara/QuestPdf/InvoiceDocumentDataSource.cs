@@ -11,7 +11,11 @@ public static class InvoiceDocumentDataSource
     private static AppDbContext context = new AppDbContext();
     public readonly static int numPokemon = 9;
 
-
+    /// <summary>
+    /// Retrieves invoice details including a list of Pokemons with their base stats and types, along with the current
+    /// date.
+    /// </summary>
+    /// <returns>An InvoiceModel containing the selected Pokemons and the current date, or null if an error occurs.</returns>
     public static InvoiceModel GetInvoiceDetails()
     {
         try
