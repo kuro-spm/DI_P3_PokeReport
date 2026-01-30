@@ -23,7 +23,11 @@ public class InvoiceDocument : IDocument
     public DocumentSettings GetSettings() => DocumentSettings.Default;
 
 
-
+    /// <summary>
+    /// Mètode principal que compon l'estructur de la pàgina del pdf.
+    /// Defineix marges, fons, capçalera, contingut principal i peu de pàgina.
+    /// </summary>
+    /// <param name="container"></param>
     public void Compose(IDocumentContainer container)
     {
         container
@@ -37,6 +41,10 @@ public class InvoiceDocument : IDocument
             });
     }
 
+    /// <summary>
+    /// Defineix una imatge de fons si existeix al disc
+    /// </summary>
+    /// <param name="container"></param>
     void ComposeBackground(IContainer container)
     {
         string backgroundImage = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Media", "background.png");
@@ -46,6 +54,10 @@ public class InvoiceDocument : IDocument
         }
     }
 
+    /// <summary>
+    /// Composa la capçalera amb el logo i la data actual
+    /// </summary>
+    /// <param name="container"></param>
     void ComposeHeader(IContainer container)
     {
         container.Row(row =>
@@ -72,6 +84,10 @@ public class InvoiceDocument : IDocument
         });
     }
 
+    /// <summary>
+    /// Defineix el cos principal del document. Itera sobre la llista de pokemon per crear cadascuna de les files del pdf
+    /// </summary>
+    /// <param name="container"></param>
     void ComposeContent(IContainer container)
     {
         container
@@ -88,6 +104,11 @@ public class InvoiceDocument : IDocument
             });
     }
 
+    /// <summary>
+    /// Composes a row in the container displaying a Pokémon's image, name, types, and base stats.
+    /// </summary>
+    /// <param name="container">The container to which the Pokémon row is added.</param>
+    /// <param name="pokemon">The Pokémon whose information is displayed in the row.</param>
     void ComposePokerow(IContainer container, Pokemon pokemon)
     {
         string imagePath = Path.Combine(baseDir, "Images", pokemon.PokId.ToString("D3") + ".png");
@@ -144,6 +165,12 @@ public class InvoiceDocument : IDocument
         });
     }
 
+    /// <summary>
+    /// Renders a statistical bar with a specified label and value within the given row.
+    /// </summary>
+    /// <param name="row">The row descriptor where the stat bar will be drawn.</param>
+    /// <param name="label">The label to display below the stat bar.</param>
+    /// <param name="value">The value determining the height of the stat bar; if null, defaults to 0.</param>
     void DrawStatBar(RowDescriptor row, string label, int? value)
     {
         row.RelativeItem().AlignBottom().Column(c =>
@@ -155,7 +182,10 @@ public class InvoiceDocument : IDocument
         });
     }
 
-
+    /// <summary>
+    /// Adds a footer to the specified container with a centered page number and images on both sides.
+    /// </summary>
+    /// <param name="container">The container to which the footer is added.</param>
     void ComposeFooter(IContainer container)
     {
         string pathImage = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Media", "pokeball2.png");
