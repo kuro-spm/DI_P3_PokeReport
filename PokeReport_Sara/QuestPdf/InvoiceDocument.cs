@@ -32,18 +32,21 @@ public class InvoiceDocument : IDocument
                 page.Background().Element(ComposeBackground);
 
                 page.Header().Element(ComposeHeader);
-                //page.Content().Element(ComposeContent);
 
+                page.Content().Element(ComposeContent);
 
                 page.Footer().Element(ComposeFooter);
-                //page.Footer().AlignCenter().Text(x =>
-                //{
-
-                //    x.CurrentPageNumber();
-                //    x.Span(" / ");
-                //    x.TotalPages();
-                //});
+               
             });
+    }
+
+    void ComposeBackground(IContainer container)
+    {
+        string backgroundImage = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Media", "background.png");
+        if (File.Exists(backgroundImage))
+        {
+            container.Image(backgroundImage).FitUnproportionally();
+        }
     }
 
     void ComposeHeader(IContainer container)
@@ -88,21 +91,28 @@ public class InvoiceDocument : IDocument
     {
         container
             .PaddingVertical(40)
-            .Height(250)
-            .Background(Colors.Grey.Lighten3)
+            .Height(500)
             .AlignCenter()
             .AlignMiddle()
             .Text("Content").FontSize(16);
     }
 
-    void ComposeBackground(IContainer container)
+    void ComposePokerow(IContainer container, int i)
     {
-        string backgroundImage = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Media", "background.png");
-        if (File.Exists(backgroundImage))
+        string imagePath = "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/" + i.ToString("D3") + ".png";
+        // "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png"
+        container.Row(row =>
         {
-            container.Image(backgroundImage).FitUnproportionally();
-        }
+            row.RelativeItem().Image(imagePath);
+            row.RelativeItem().Padding(5).Background("#E0E0E0").Column(col => { 
+                            
+            });
+            row.RelativeItem().Padding(5).Background("#E0E0E0").Column(col => {
+                col.Item().AlignCenter().Text("STATS");
+            });
+        });
     }
+    
 
     void ComposeFooter(IContainer container)
     {
