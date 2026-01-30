@@ -25,6 +25,7 @@ namespace PokeReport_Sara
         /// <summary>
         /// Esdeveniment que s'executa quan la finestra s'ha carregat completament.
         /// Orquestra tot el procés: configuració, descàrrega i visualització.
+        /// La imatge es guarda en una carpeta Images de Environment.CurrentDirectory.
         /// </summary>
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
