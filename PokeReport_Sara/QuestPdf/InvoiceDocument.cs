@@ -30,15 +30,10 @@ public class InvoiceDocument : IDocument
             .Page(page =>
             {
                 page.Margin(50);
-
                 page.Background().Element(ComposeBackground);
-
                 page.Header().Element(ComposeHeader);
-
                 page.Content().Element(ComposeContent);
-
                 page.Footer().Element(ComposeFooter);
-               
             });
     }
 
@@ -57,9 +52,6 @@ public class InvoiceDocument : IDocument
         {
             row.RelativeItem().Column(column =>
             {
-
-
-
                 string imagePath = Path.Combine(baseDir, "Media", "Ball-Pokedex.png");
                 if (File.Exists(imagePath))
                 {
@@ -76,16 +68,7 @@ public class InvoiceDocument : IDocument
                     text.Span("Data: ").SemiBold();
                     text.Span($"{Model.currentDate:d}");
                 });
-                //column.Item().Text(text =>
-                //{
-                //    text.Span("Data: ").SemiBold();
-                //    text.Span($"{Model.currentDate:d}");
-                //});
-
-
             });
-
-            //row.ConstantItem(100).Height(50).Placeholder();
         });
     }
 
@@ -105,27 +88,73 @@ public class InvoiceDocument : IDocument
             });
     }
 
-    void ComposePokerow(IContainer container, Pokemon pok)
+    void ComposePokerow(IContainer container, Pokemon pokemon)
     {
-        string imagePath = Path.Combine(baseDir, "Images", pok.PokId.ToString("D3")+".png");
+        string imagePath = Path.Combine(baseDir, "Images", pokemon.PokId.ToString("D3") + ".png");
 
         container.Row(row =>
         {
-            row.RelativeItem().Image(imagePath);
-            row.RelativeItem().Padding(5).Background("#E0E0E0").Column(col => {
-                col.Item().AlignCenter().Text($"N.°:{pok.PokId:D4}").FontColor(Colors.Grey.Darken2);
-                col.Item().AlignCenter().Text(pok.PokName.ToUpper()).Bold().FontSize(14);
-            });
-            row.RelativeItem().Padding(5).Background("#E0E0E0").Column(col => {
-                col.Item().AlignCenter().Text("STATS");
-                col.Item().Row(stats =>
-                {
+            if (File.Exists(imagePath))
+                row.RelativeItem().Image(imagePath);
+            else
+                row.RelativeItem().Placeholder();
 
+            row.RelativeItem().Padding(5).Background("#E0E0E0").Column(col =>
+            {
+                col.Item().Padding(25).AlignCenter().AlignMiddle().Text($"N.°:{pokemon.PokId:D4}").FontColor(Colors.Grey.Darken2);
+                col.Item().Padding(5).AlignCenter().AlignMiddle().Text(pokemon.PokName.ToUpper()).Bold().FontSize(14);
+                col.Item().Padding(25).PaddingTop(5).Row(typeRow =>
+                {
+                    typeRow.Spacing(5);
+                    if (pokemon.PokemonTypes != null)
+                    {
+                        foreach (var pokType in pokemon.PokemonTypes)
+                        {
+                            string color = pokType.Type.Color ?? Colors.Grey.Medium;
+
+                            typeRow.RelativeItem()
+                                   .Background(color)
+                                   .Padding(4)
+                                   .PaddingHorizontal(5)
+                                   .AlignCenter()
+                                   .Text(pokType.Type.TypeName.ToUpper())
+                                   .FontSize(8)
+                                   .FontColor(Colors.White);
+                        }
+                    }
+                });
+            });
+            row.RelativeItem().Padding(5).Background("#E0E0E0").Column(col =>
+            {
+                col.Item().Padding(25).AlignCenter().Text("STATS");
+                col.Item().PaddingHorizontal(5).PaddingBottom(25).Height(75).Row(stats =>
+                {
+                    stats.Spacing(2);
+                    if (pokemon.BaseStat != null)
+                    {
+                        DrawStatBar(stats, "HP", pokemon.BaseStat.BHp);
+                        DrawStatBar(stats, "ATK", pokemon.BaseStat.BAtk);
+                        DrawStatBar(stats, "DEF", pokemon.BaseStat.BDef);
+                        DrawStatBar(stats, "SPA", pokemon.BaseStat.BSpAtk);
+                        DrawStatBar(stats, "SPD", pokemon.BaseStat.BSpDef);
+                        DrawStatBar(stats, "VEL", pokemon.BaseStat.BSpeed);
+                    }
                 });
             });
         });
     }
-    
+
+    void DrawStatBar(RowDescriptor row, string label, int? value)
+    {
+        row.RelativeItem().AlignBottom().Column(c =>
+        {
+            float height = (value ?? 0) / 2.5f;
+            c.Item().Height(height).PaddingHorizontal(4).Background(Colors.Blue.Lighten2);
+
+            c.Item().AlignCenter().Text(label).FontSize(6);
+        });
+    }
+
 
     void ComposeFooter(IContainer container)
     {
@@ -137,7 +166,7 @@ public class InvoiceDocument : IDocument
             row.RelativeItem().AlignRight().Width(10).Image(pathImage);
             row.RelativeItem().AlignCenter().Text(x =>
             {
-                x.Span("Página ").FontSize(10);
+                x.Span("Pàgina ").FontSize(10);
                 x.CurrentPageNumber().FontSize(10);
                 x.Span(" / ").FontSize(10);
                 x.TotalPages().FontSize(10);
