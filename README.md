@@ -1,7 +1,7 @@
 # 🔴 PokeReport PDF Generator
 
 ![Estat](https://img.shields.io/badge/Estat-Completat-success?style=for-the-badge&logo=github)
-![.NET](https://img.shields.io/badge/.NET-6.0-purple?style=for-the-badge&logo=dotnet)
+![.NET](https://img.shields.io/badge/.NET-8.0-purple?style=for-the-badge&logo=dotnet)
 ![QuestPDF](https://img.shields.io/badge/Llibreria-QuestPDF-blue?style=for-the-badge)
 ![WPF](https://img.shields.io/badge/UI-WPF-b02010?style=for-the-badge)
 
@@ -55,7 +55,7 @@ L'aplicació es connecta a una base de dades MySQL per obtenir informació detal
 
 1.  **Clonar el repositori:**
     ```bash
-    git clone [https://github.com/el-teu-usuari/PokeReport.git](https://github.com/el-teu-usuari/PokeReport.git)
+    git clone https://github.com/kuro-spm/DI_P3_PokeReport.git
     ```
 
 2.  **Configurar la Base de Dades:**
@@ -69,7 +69,7 @@ L'aplicació es connecta a una base de dades MySQL per obtenir informació detal
     * `Pomelo.EntityFrameworkCore.MySql` (o similar)
 
 4.  **Executar:**
-    Prem **F5**. La primera vegada veuràs la barra de progrés mentre es capturen les imatges dels Pokémon.
+    Prem **F5**. La primera vegada veuràs la barra de progrés mentre es descarreguen les imatges dels Pokémon.
 
 ---
 
@@ -81,4 +81,12 @@ L'arquitectura separa clarament la lògica de la vista de la generació del docu
 * `InvoiceDocument.cs`: **Nucli del disseny**. Conté tota la lògica visual de QuestPDF (Capçalera, Files de Pokémon, Gràfics).
 * `InvoiceDocumentDataSource.cs`: Servei encarregat de parlar amb la BD i preparar el model.
 * `Models/`: Classes POCO (`Pokemon`, `Type`, `BaseStat`) mapejades des de la base de dades.
+
+---
+
+## ✒️ Autor
+
+**Sara Prats Morales**
+* [LinkedIn](https://www.linkedin.com/in/sara-prats-morales)
+* [GitHub](https://github.com/kuro-spm)
 
