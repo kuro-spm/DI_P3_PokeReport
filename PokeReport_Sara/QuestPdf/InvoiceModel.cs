@@ -14,7 +14,5 @@ namespace PokeReport.QuestPdf
         public DateTime currentDate { get; set; }
         public List<Pokemon> pokemonList { get; set; }
 
-
-
     }
 }

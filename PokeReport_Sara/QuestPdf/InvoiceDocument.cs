@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using PokeData.Models;
 using PokeReport.QuestPdf;
 using QuestPDF.Drawing;
 using QuestPDF.Fluent;
@@ -10,7 +11,6 @@ using System.IO;
 public class InvoiceDocument : IDocument
 {
     string baseDir = AppDomain.CurrentDomain.BaseDirectory;
-    public static int NUMPOKEMON = 1;
 
     public InvoiceModel Model { get; }
 
@@ -98,22 +98,23 @@ public class InvoiceDocument : IDocument
             .Column(col =>
             {
                 col.Spacing(10);
-                for (int i = 0; i < NUMPOKEMON; i++)
+                foreach (var pokemon in Model.pokemonList.ToList())
                 {
-                    col.Item().Element(subContainer => ComposePokerow(subContainer, i+1));
+                    col.Item().Element(subContainer => ComposePokerow(subContainer, pokemon));
                 }
             });
     }
 
-    void ComposePokerow(IContainer container, int i)
+    void ComposePokerow(IContainer container, Pokemon pok)
     {
-        string imagePath = Path.Combine(baseDir, "Images", i.ToString("D3")+".png");
+        string imagePath = Path.Combine(baseDir, "Images", pok.PokId.ToString("D3")+".png");
 
         container.Row(row =>
         {
             row.RelativeItem().Image(imagePath);
-            row.RelativeItem().Padding(5).Background("#E0E0E0").Column(col => { 
-                            
+            row.RelativeItem().Padding(5).Background("#E0E0E0").Column(col => {
+                col.Item().AlignCenter().Text($"N.°:{pok.PokId:D4}").FontColor(Colors.Grey.Darken2);
+                col.Item().AlignCenter().Text(pok.PokName.ToUpper()).Bold().FontSize(14);
             });
             row.RelativeItem().Padding(5).Background("#E0E0E0").Column(col => {
                 col.Item().AlignCenter().Text("STATS");

@@ -9,6 +9,7 @@ public static class InvoiceDocumentDataSource
 {
     private static Random Random = new Random();
     private static AppDbContext context = new AppDbContext();
+    public readonly static int numPokemon = 9;
 
 
     public static InvoiceModel GetInvoiceDetails()
@@ -20,7 +21,7 @@ public static class InvoiceDocumentDataSource
                 pokemonList = context.Pokemons
                      .Include(p => p.BaseStat)
                      .Include(p => p.PokemonTypes).ThenInclude(pt => pt.Type)
-                     .Take(100)
+                     .Take(numPokemon)
                      .ToList(),
                 currentDate = DateTime.Now
             };

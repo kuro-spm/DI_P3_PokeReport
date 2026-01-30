@@ -31,10 +31,23 @@ namespace PokeReport_Sara
         {
             try
             {
-                
-                // 1. Assegurem que tenim la imatge necessària abans de generar el PDF
-                string urlBulbasaur = "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png";
-                await GestionarImatgeLocalAsync(urlBulbasaur);
+                // 0. CONFIGURACIÓN INICIAL de la baarra de càrrega
+                int totalPokemons = InvoiceDocumentDataSource.numPokemon;
+                BarraProgreso.Maximum = totalPokemons; 
+                BarraProgreso.Value = 0;
+
+                for (int i = 0; i < totalPokemons; i++)
+                {
+                    TxtStatus.Text = $"Capturant Pokémon {i + 1} de {totalPokemons}...";
+                    // 1. Assegurem que tenim la imatge necessària abans de generar el PDF
+                    string urlPokemon = "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/"+(i+1).ToString("D3") +".png";
+                    await GestionarImatgeLocalAsync(urlPokemon);
+                    BarraProgreso.Value = i + 1;
+
+                }
+
+                TxtStatus.Text = "Generant informe PDF...";
+                //await Task.Delay(10);
 
                 // 2. Configurem la llicència de QuestPDF (Community és gratuïta per a ús no comercial/petites empreses)
                 QuestPDF.Settings.License = LicenseType.Community;
@@ -48,12 +61,13 @@ namespace PokeReport_Sara
                 string nomFitxer = "invoice.pdf";
                 document.GeneratePdf(nomFitxer);
 
-                // Opcional: Obre l'eina de previsualització de QuestPDF
-                // document.ShowInCompanionAsync(); 
-
                 // 5. Mostrem el PDF dins del component WebView de WPF
                 String fullPath = Path.GetFullPath(nomFitxer);
                 BrowserView.Source = new Uri("file:///" + fullPath);
+
+                //Ocultar pantalla de carrega
+                LoadingScreen.Visibility = Visibility.Collapsed;
+                BrowserView.Visibility = Visibility.Visible;
             }
             catch (Exception ex)
             {
