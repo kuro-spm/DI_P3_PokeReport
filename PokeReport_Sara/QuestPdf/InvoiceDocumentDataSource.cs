@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PokeData.Models;
 using PokeReport.QuestPdf;
-using QuestPDF.Helpers;
-using System.Net;
 using System.Windows;
 
 public static class InvoiceDocumentDataSource
